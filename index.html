@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+    
+    <!-- Font Loading: Inter typeface with weights 400-700 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page Identifier Label: Fixed position badge at top -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+    
+    <!-- Cards Container: Horizontal layout wrapper for pricing cards -->
     <div class="cards-container">
+        
+        <!-- Hobby Plan Card: Free tier with basic features -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan Title -->
                 <h3 class="card-title">Hobby</h3>
+                
+                <!-- Pricing Display: Shows "Free" with no period -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+                
+                <!-- Feature List Section -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +50,24 @@
                     </ul>
                 </div>
             </div>
+            
+            <!-- Call-to-Action Button: Secondary style (light background) -->
             <button class="download-button secondary">Download</button>
         </div>
+        
+        <!-- Pro Plan Card: Paid tier with extended features -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan Title -->
                 <h3 class="card-title">Pro</h3>
+                
+                <!-- Pricing Display: Amount + period (per month) -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+                
+                <!-- Feature List Section -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,7 +90,53 @@
                     </ul>
                 </div>
             </div>
+            
+            <!-- Call-to-Action Button: Primary style (dark background) -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+        
+        <!-- Enterprise Plan Card: Premium tier for teams and businesses -->
+        <div class="card">
+            <div class="card-top">
+                <!-- Plan Title -->
+                <h3 class="card-title">Enterprise</h3>
+                
+                <!-- Pricing Display: Amount + period (per month) -->
+                <p class="card-price">
+                    <span class="card-price-amount">$40</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                
+                <!-- Feature List Section -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team collaboration tools
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Advanced security features
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom integrations
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated account manager
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Call-to-Action Button: Primary style (dark background) -->
+            <button class="download-button primary">Contact Sales</button>
         </div>
     </div>
 </body>
